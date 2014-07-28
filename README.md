@@ -1,5 +1,7 @@
-パズドラ進化リスト取得 Google apps script
+パズドラ進化リスト取得スクリプト
 =============================
+
+Google apps script
 
 - puzzdra_all_monsters.gs
 
