@@ -1,4 +1,7 @@
-Google Apps Script 集
+パズドラ進化リスト取得 Google apps script
 =============================
 
-- pazudora_all_monsters.gs
+- puzzdra_all_monsters.gs
+
+  モンスターリスト、進化リスト、究極進化リストを取得するスクリプト
+  Google SpreadSheet で動作させるだけ
