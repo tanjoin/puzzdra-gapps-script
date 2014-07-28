@@ -108,9 +108,9 @@ function list_count() {
 // -----------------------------------------------------------------
 // 究極進化リスト取得メソッド
 // -----------------------------------------------------------------
-var ultimate_evo = {};
+var PuzzdraUltimateMonster = {};
 
-ultimate_evo.getBeforeResult = function(shinka) {
+PuzzdraUltimateMonster.getBeforeResult = function(shinka) {
   // TODO: const 
   var a_start_string = "<a href=\"/m";
   var a_end_string = "\">";
@@ -128,7 +128,7 @@ ultimate_evo.getBeforeResult = function(shinka) {
   return {number: before_monster_number, name: before_monster_name, result: put_before_string};
 }
 
-ultimate_evo.getClearfixResults = function(shinka) {
+PuzzdraUltimateMonster.getClearfixResults = function(shinka) {
   // TODO: const 
   var a_start_string = "<a href=\"/m";
   var a_end_string = "\">";
@@ -193,9 +193,9 @@ function getUltimateEvolutionList() {
   
   for (var i = 0; i < shinka.length; i++) {
     // 進化元
-    var before = ultimate_evo.getBeforeResult(shinka[i]);
+    var before = PuzzdraUltimateMonster.getBeforeResult(shinka[i]);
     // 進化先
-    var nexts = ultimate_evo.getClearfixResults(shinka[i]);
+    var nexts = PuzzdraUltimateMonster.getClearfixResults(shinka[i]);
     
     for(var j = 0; j < nexts.length; j++) {
       // シートに追加
